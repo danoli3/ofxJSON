@@ -21,3 +21,5 @@ example/obj
 # Win
 *.exe
 *.dll
+
+/example-fileNotWorking/
