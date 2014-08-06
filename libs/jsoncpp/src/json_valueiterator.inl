@@ -149,6 +149,7 @@ ValueIteratorBase::copy( const SelfType &other )
 {
 #ifndef JSON_VALUE_USE_INTERNAL_MAP
    current_ = other.current_;
+   isNull_ = other.isNull_;
 #else
    if ( isArray_ )
       iterator_.array_ = other.iterator_.array_;
@@ -297,3 +298,4 @@ ValueIterator::operator =( const SelfType &other )
 }
 
 } // namespace Json
+// vim: et ts=3 sts=3 sw=3 tw=0
